@@ -357,6 +357,11 @@ $(document).ready(function () {
     });
   });
 
+  $(".video-gallery a").on("click", function (event) {
+    event.preventDefault(); // Prevent default anchor behavior
+  });
+
+
 
 
 
