@@ -336,16 +336,28 @@ $(document).ready(function($) {
    /* ==============================================
        Video Gallery
     =============================================== */
+// Check if on mobile device
+$(document).ready(function () {
+    $(".video-gallery").magnificPopup({
+      delegate: "a",
+      type: "iframe",
+      gallery: {
+        enabled: true
+      },
+      callbacks: {
+        open: function () {
+          // Disable scrolling on the body when the popup is open
+          $("body").addClass("mfp-open");
+        },
+        close: function () {
+          // Re-enable scrolling on the body when the popup is closed
+          $("body").removeClass("mfp-open");
+        }
+      }
+    });
+  });
 
-    $(document).ready(function () {
-        $(".video-gallery").magnificPopup({
-          delegate: "a",
-          type: "iframe",
-          gallery: {
-            enabled: true
-          }
-        });
-      });
+
 
 
     /* ==============================================
