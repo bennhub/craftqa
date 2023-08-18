@@ -348,6 +348,15 @@ $(document).ready(function () {
     });
   });
 
+  $(document).ready(function () {
+    $(".fancybox").fancybox({
+      type: "iframe",
+      iframe: {
+        preload: false // Disable preloading for better mobile performance
+      }
+    });
+  });
+
 
 
     /* ==============================================
