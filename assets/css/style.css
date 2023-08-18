@@ -1986,7 +1986,7 @@ ul.features-list li {
   transform: translate3d(0, 0, 0);
 }
 
-/*
+
 @media screen and (max-width: 784px) {
   .video-gallery {
     width: 100%;
@@ -1999,7 +1999,7 @@ ul.features-list li {
     width: 100%;
   }
 }
-*/
+
 
 /*--------------------
   Video Gallery section end
