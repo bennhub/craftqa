@@ -336,17 +336,6 @@ $(document).ready(function($) {
    /* ==============================================
        Video Gallery
     =============================================== */
-// Check if on mobile device
-
-$(document).ready(function () {
-    $(".video-gallery").magnificPopup({
-      delegate: "a",
-      type: "iframe",
-      gallery: {
-        enabled: true
-      }
-    });
-  });
 
   $(document).ready(function () {
     $(".fancybox").fancybox({
