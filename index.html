@@ -80,8 +80,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="#"><img src="assets/images/ufo.png" alt="" width="65" height="65"></a><span class="larger-text">Craft
-            QA</span>
+          <a href="#"><img src="assets/images/ufo_color.png" alt="" width="65" height="65"></a><span class="larger-text">craft QA
+            </span>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navigation-nav">
@@ -368,29 +368,11 @@
 
     <!-- Video section
     ================================================== -->
-    <section>
-      <div id="video-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-              <div class="video-section-content text-center">
-                <a class="fancybox" data-fancybox="video-gallery" href="http://vimeo.com/channels/staffpicks/116829150" class="video-pop-up"><i
-                    class="fa fa-play"></i></a>
-                <div class="video-head">Introducing Video</div>
-              </div>
-            </div> <!-- end col-sm-6 -->
-          </div> <!-- end row -->
-        </div> <!-- end container -->
-      </div>
-    </section>
-    <!-- End Video section -->
-
-    <!--  Video Gallery section -->
 
     <div class="content">
 
       <div class="section-header">
-        <h1>Video Gallery</h1>
+        <h1>vid-gallery</h1>
       </div>
 
       <div class="video-gallery">
@@ -704,49 +686,6 @@
       <div class="sep-section"></div>
     </section>
 
-    <!-- Creative section-1
-    ================================================== -->
-    <section>
-      <div id="creative-section-1" class="pad-sec">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-sm-7 img-creative-left text-center animated out" data-animation="fadeInLeft" data-delay="0">
-              <figure>
-                <img src="assets/images/temp/cover.png" alt="">
-              </figure>
-            </div> <!-- End col-sm-8 -->
-
-            <div class="col-sm-5 creative-content-right animated out" data-animation="fadeInRight" data-delay="0">
-              <div class="section_header">
-                <h2>Creative project</h2>
-              </div> <!-- End section_header -->
-
-              <p> Lorem ipsum <span>dolor</span> sit amet, consectetur adipisicing elit.Sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur.</p>
-
-              <div class="view-more">
-                <a href="#services-section" class="btn btn-lg btn-primary">View online</a>
-              </div>
-            </div> <!-- End feature-content -->
-
-          </div> <!-- End row -->
-        </div> <!-- End container -->
-      </div> <!-- End feature-section -->
-    </section>
-    <!-- End Creative section-1 -->
-
-    <section>
-      <div class="sep-section"></div>
-    </section>
-
-    <!-- Screenshots
-    ================================================== -->
-
-
-    <!-- End screenshots-section -->
-
     <!-- Clients-section
     ================================================== -->
     <section>
@@ -849,37 +788,46 @@
             </div> <!-- End row -->
           </div> <!-- end title-section -->
 
+
+
           <div class="form-wrapper">
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
-
                 <!-- form fields -->
-                <form action="assets/php/contact.php.htm" method="post" name="contactform" id="contactform"
+                <form action="https://formspree.io/f/meqbgopn" method="post" name="contactform" id="contactform"
                   class="animated out" data-animation="fadeInUp" data-delay="0">
 
                   <fieldset>
                     <div class="form-group">
-                      <input class="form-control br-b" type="text" name="name" id="name" placeholder="Name">
+                      <label for="name">Name:</label>
+                      <input class="form-control br-b" type="text" name="name" id="name" placeholder="Name" required>
                     </div>
 
                     <div class="form-group">
-                      <input class="form-control br-b" type="email" name="email" id="email" placeholder="Email">
+                      <label for="email">Email:</label>
+                      <input class="form-control br-b" type="email" name="email" id="email" placeholder="Email" required>
+                      <p id="email-error" class="error-msg" style="display: none;">Please fill in your email.</p>
                     </div>
 
                     <div class="form-group">
+                      <label for="message">Message:</label>
                       <textarea class="form-control br-b" name="message" id="message"
-                        placeholder="Message..."></textarea>
+                        placeholder="Message..." required></textarea>
                     </div>
                   </fieldset>
 
                   <!-- submit button -->
                   <div class="form-group">
-                    <input type="submit" name="submit" value="Send message" id="submit" class="btn btn-sm btn-dark">
+                    <button type="submit" name="submit" id="submit" class="btn btn-sm btn-dark">Send message</button>
                   </div>
 
                   <div id="alert"></div>
 
                 </form>
+              </div>
+            </div>
+          </div>
+
 
               </div> <!-- end col-md-8 -->
             </div> <!-- end row -->
