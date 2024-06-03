@@ -1,5 +1,5 @@
 # Craft QA
-Craft QA is a static website created to showcase software quality assurance services for businesses. Built using Bootstrap, this website highlights the expertise and offerings provided by Craft QA to ensure the quality and reliability of software products.
+Craft QA is a static website created to showcase software quality assurance services for businesses. Built using Bootstrap, this website highlights the expertise and offerings provided by Craft QA to ensure the quality and reliability of software products. I came up with the idea as a option for side gig work. 
 
 ## About Craft QA
 Craft QA specializes in providing comprehensive software quality assurance solutions to companies of all sizes. With a focus on meticulous testing and attention to detail, Craft QA helps businesses deliver high-quality software products to their customers.
