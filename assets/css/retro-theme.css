@@ -223,7 +223,8 @@
   
   p {
     margin: 0;
-    font-size: 15px
+    font-size: 15px;
+    color:#fff;
   }
   
   .title-section hr {
@@ -886,6 +887,7 @@ p.hero {
     line-height: 28px;
     letter-spacing: 1.7px;
     font-weight: 300;
+    color:#fff;
   }
   
   .big-title-sec .view-more {
@@ -1405,7 +1407,7 @@ p.hero {
 }
 
 .service-box h4 {
-    color: var(--retro-text);
+    color: #fff;
     font-family: 'Courier New', monospace;
     margin-top: 15px;
     margin-bottom: 20px;
