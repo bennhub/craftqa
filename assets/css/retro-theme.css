@@ -733,14 +733,14 @@ p.hero {
 /* Add subtle text pulse animation */
 @keyframes textPulse {
     0% {
-        text-shadow: 0 0 10px var(--retro-accent);
+        text-shadow: 0 0 5px var(--retro-accent);
     }
     10% {
-        text-shadow: 0 0 20px var(--retro-accent),
-                     0 0 30px var(--retro-accent);
+        text-shadow: 0 0 10px var(--retro-accent),
+                     0 0 20px var(--retro-accent);
     }
     50% {
-        text-shadow: 0 0 10px var(--retro-accent);
+        text-shadow: 0 0 5px var(--retro-accent);
     }
 }
 
