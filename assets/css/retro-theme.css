@@ -689,12 +689,13 @@
   
   .hero-content h1, p.hero {
     color: #fff;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     display: inline-block;
     padding: 20px 30px;
-    border: 1px solid var(--retro-accent);
+    border: 2px solid #fff;
+    border-radius: 10px;
     box-shadow: 0 0 15px var(--retro-accent),
-                inset 0 0 5px var(--retro-accent);
+                inset 0 0 15px var(--retro-accent);
 }
 
 .hero-content h1 {
@@ -755,8 +756,8 @@ p.hero {
     height: 100%;
     background: repeating-linear-gradient(
         0deg,
-        rgba(253, 253, 253, 0.3),
-        rgba(180, 180, 180, 0.3) 1px,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1) 1px,
         transparent 1px,
         transparent 2px
     );
@@ -783,7 +784,9 @@ p.hero {
    /* Style for the button */
    .play-btn {
     display: inline-block;
-    color: rgb(255, 255, 255);
+    color: var(--retro-accent);
+    text-shadow: 0 0 35px var(--retro-accent);
+    animation: textPulse 2s infinite;
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
@@ -794,7 +797,7 @@ p.hero {
   
    /* Hover state for the button */
    .play-btn:hover {
-    color: rgb(84, 83, 83);
+    color: rgb(36, 255, 12);
   }
   
   /* Remove default underline from links */
