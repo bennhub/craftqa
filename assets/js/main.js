@@ -1,8 +1,3 @@
-/*
-	Salient by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
 
 var $ = jQuery.noConflict();
 
@@ -57,12 +52,13 @@ $(document).ready(function($) {
     =============================================== */
 
     $('.caption-slides').bxSlider({
-      pager: false,
-      mode: 'fade',
-      adaptiveHeight: true,
-      controls: false,
-      auto: true
-    });
+        pager: false,
+        mode: 'fade',
+        adaptiveHeight: true,
+        controls: false,
+        auto: true,
+        pause: 8000  // Add this line to set the pause duration to 5 seconds
+      });
 
     /* ==============================================
         Smooth Scroll on anchors
