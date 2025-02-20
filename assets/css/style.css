@@ -747,11 +747,6 @@ ul.caption-slides li {
   margin-right: 2px;
 }
 
-.big-title-sec .view-more a.btn-primary:hover {
-  opacity: .8;
-  background: #fc6e51;
-  border: 1px solid #fc6e51;
-}
 
 .about-box {
   text-align: center;
