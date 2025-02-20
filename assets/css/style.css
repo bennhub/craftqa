@@ -467,6 +467,27 @@ p {
   display: block;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Ensure the container stretches the full width */
+  max-width: 130px; /* Control the max width of the entire container */
+}
+
+img {
+  width: 100%; /* Makes the image scale to fit the container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Prevent the image from exceeding the container’s width */
+}
+
+img {
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.9)); /* White glow following the image shape */
+}
+
+
+
+
 /***********************************************************************************************/
 /* Hero section */
 /***********************************************************************************************/
