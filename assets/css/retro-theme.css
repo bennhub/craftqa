@@ -1486,6 +1486,107 @@ p.hero {
     pointer-events: none;
 }
 
+.core-expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1120px;
+    margin: 38px auto 0;
+}
+
+.core-expertise-card {
+    grid-column: span 2;
+    background: rgba(6, 14, 6, 0.88);
+    border: 2px solid var(--retro-accent);
+    padding: 22px 20px 18px;
+    box-shadow: 0 0 18px rgba(0, 255, 102, 0.12);
+    min-height: 100%;
+}
+
+.core-expertise-card:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.core-expertise-card:nth-child(5) {
+    grid-column: 4 / span 2;
+}
+
+.core-expertise-card h4 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 0 5px var(--retro-accent);
+}
+
+.core-expertise-card p {
+    margin: 0 0 14px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--retro-text);
+    opacity: 0.9;
+}
+
+.core-expertise-points {
+    margin: 0;
+}
+
+.core-expertise-points li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--retro-text);
+}
+
+.core-expertise-points li:last-child {
+    margin-bottom: 0;
+}
+
+.core-expertise-points i {
+    color: var(--retro-accent);
+    font-size: 14px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+    .core-expertise-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 760px;
+    }
+
+    .core-expertise-card,
+    .core-expertise-card:nth-child(4),
+    .core-expertise-card:nth-child(5) {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .core-expertise-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 28px;
+    }
+
+    .core-expertise-card,
+    .core-expertise-card:nth-child(4),
+    .core-expertise-card:nth-child(5) {
+        grid-column: auto;
+    }
+
+    .core-expertise-card {
+        padding: 18px 16px 14px;
+    }
+
+    .core-expertise-card h4 {
+        font-size: 18px;
+    }
+}
+
   .team-image {
     margin-bottom: 20px;
   }
