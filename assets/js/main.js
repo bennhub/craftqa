@@ -49,14 +49,16 @@ $(document).ready(function($) {
         Hero slider
     =============================================== */
 
-    $('.caption-slides').bxSlider({
-        pager: false,
-        mode: 'fade',
-        adaptiveHeight: true,
-        controls: false,
-        auto: true,
-        pause: 8000  // Add this line to set the pause duration to 5 seconds
-      });
+    if ($('.caption-slides').length) {
+        $('.caption-slides').bxSlider({
+            pager: false,
+            mode: 'fade',
+            adaptiveHeight: true,
+            controls: false,
+            auto: true,
+            pause: 8000
+        });
+    }
 
     /* ==============================================
         Smooth Scroll on anchors
