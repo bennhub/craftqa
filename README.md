@@ -5,7 +5,7 @@ Craft QA is a site created to showcase software quality assurance services for b
 Craft QA specializes in providing comprehensive software quality assurance solutions to companies of all sizes. With a focus on meticulous testing and attention to detail, Craft QA helps businesses deliver high-quality software products to their customers.
 
 ## Website URL
-Visit the Craft QA website here --> https://bennhub.github.io/craftqa/
+Visit the Craft QA website here --> https://craftqa.mindebase.ca
 
 ## Features
 Responsive Design: I Built this site with Bootstrap for a responsive and mobile-friendly experience.
