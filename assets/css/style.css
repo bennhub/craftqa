@@ -202,6 +202,12 @@ p {
   border-bottom: 1px solid #EAEAEA;
 }
 
+.section-divider-tight {
+  max-width: 1080px;
+  margin: 0 auto;
+  opacity: 0.7;
+}
+
 .larger-text {
   font-size: 25px;
   font-family: Verdana, tahoma, sans-serif;
@@ -2654,6 +2660,10 @@ label {
   padding: 120px 0;
 }
 
+#features-app-section-2 {
+  padding-top: 72px;
+}
+
 .features-app-content-right {
   padding-top: 30px;
 }
@@ -2989,7 +2999,7 @@ ul.download li a img {
 /***********************************************************************************************/
 
 #footer-section {
-  padding: 80px 0;
+  padding: 40px 0 28px;
   background: #F7F7F7;
   border-top: 1px solid #EEEEEE;
 }
@@ -3054,7 +3064,7 @@ ul.footer-social-links li a.footer-icon-link:after {
 }
 
 p.copyright {
-  padding-top: 40px;
+  padding-top: 18px;
 }
 
 /***********************************************************************************************/
