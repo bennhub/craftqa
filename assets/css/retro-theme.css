@@ -610,11 +610,28 @@
   /* =Hero section */
   /***********************************************************************************************/
   
-  #hero-section {
+#hero-section {
     position: relative;
     display: table;
     width: 100%;
   }
+
+#hero-section .container {
+    width: 100%;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#hero-section .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#hero-section .col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
   
   .home-hero:before {
     position: absolute;
@@ -732,10 +749,10 @@ p.hero {
 
 .hero-helmet {
     position: relative;
-    width: 100vw;
-    max-width: none;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     container-type: inline-size;
     filter: drop-shadow(0 24px 60px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 40px rgba(60, 188, 60, 0.12));
 }
@@ -973,7 +990,7 @@ p.hero {
 
 @media (max-width: 900px) {
     .hero-helmet {
-        width: 100vw;
+        width: 100%;
     }
 
     .hero-visor {
