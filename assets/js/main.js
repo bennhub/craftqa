@@ -8,13 +8,21 @@ $(document).ready(function($) {
         Full height home-section
     =============================================== */
 
-	var windowHeight = $(window).height(),
-		topSection = $('#hero-section');
-	topSection.css('height', windowHeight);
+	var topSection = $('#hero-section');
+
+	function setHeroHeight() {
+		if ($(window).width() < 768) {
+			topSection.css('height', 'auto');
+			return;
+		}
+
+		topSection.css('height', $(window).height());
+	}
+
+	setHeroHeight();
 
 	$(window).resize(function(){
-		var windowHeight = $(window).height();
-		topSection.css('height', windowHeight);
+		setHeroHeight();
 	});
 
     /* ==============================================
@@ -44,21 +52,6 @@ $(document).ready(function($) {
         horizontalScrolling: false,
         verticalOffset: 0
     });
-
-    /* ==============================================
-        Hero slider
-    =============================================== */
-
-    if ($('.caption-slides').length) {
-        $('.caption-slides').bxSlider({
-            pager: false,
-            mode: 'fade',
-            adaptiveHeight: true,
-            controls: false,
-            auto: true,
-            pause: 8000
-        });
-    }
 
     /* ==============================================
         Smooth Scroll on anchors
