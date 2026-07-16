@@ -1758,6 +1758,10 @@ ul.details-list li:last-child {
   text-align: center;
 }
 
+.services-hero-image {
+  margin-top: 70px;
+}
+
 .choose-image {
   text-align: center;
 }
@@ -2714,6 +2718,19 @@ ul.features-app-list li {
 
 #features-app-section-2 ul.features-app-list {
   padding-top: 50px;
+}
+
+#features-app-section-2 .how-i-work-content {
+  float: none;
+}
+
+#features-app-section-2 .how-i-work-content .section_header {
+  text-align: center;
+}
+
+#features-app-section-2 .how-i-work-content .features-app-list {
+  max-width: 760px;
+  margin: 0 auto;
 }
 
 #features-app-section-2 ul.features-app-list li {
